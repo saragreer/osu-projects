@@ -1,19 +1,11 @@
 /*****
-* Author:           Sara Greer
-* Date:             May 19, 2014
-* Last modified:	  June 8, 2014
-* File name:        finalproject.cpp
+* Author:		Sara Greer
+* Date:			May 19, 2014
+* Last modified:	June 8, 2014
+* File name:		finalproject.cpp
 *
-* Overview:         ToDay is a simple to do list app that allows a user
-*					          to create a list and edit, mark complete, and view tasks.
-*
-* Reevaluation:     Please re-evaluate the command line argument requirement
-*                   from Assignment 7 based on source code found in main at
-*                   line 73 and inside a class function at line 407. At the
-*                   time I did not understand how to interpret and convert
-*                   the arguments into usable data. After several tutorials
-*                   I finally understood the basics and was able to implement
-*                   them in a program.
+* Overview:         	ToDay is a simple to do list app that allows a user
+*		    	to create a list and edit, mark complete, and view tasks.
 *
 *****/
 
@@ -95,7 +87,7 @@ int main(int argc, const char * argv[])
 
 /************************************************************************
 * Function name:    menu(Todo task[], int taskListSize)
-* Entry:			Takes pointer to first array index, size of array
+* Entry:	    Takes pointer to first array index, size of array
 * Exit:             One of two member functions, or exits program.
 * Purpose:          Allows user to choose how to manipulate data or exit.
 ************************************************************************/
@@ -146,7 +138,7 @@ void Todo::menu(Todo task[], int taskListSize)
 
 /************************************************************************
 * Function name:    input()
-* Entry:			If no command line arguments, calls from main.
+* Entry:	    If no command line arguments, calls from main.
 * Exit:             Returns array of class objects input by user.
 * Purpose:          Creates task list with description, status, priority
 *                   and category information.
@@ -202,8 +194,8 @@ void Todo::input()
 
 /************************************************************************
  * Function name:   input(int argc, const char * argv[])
- * Entry:			Runs if command line arguments are detected
- * Exit:			Returns array of objects of class Todo
+ * Entry:	    Runs if command line arguments are detected
+ * Exit:	    Returns array of objects of class Todo
  * Purpose:         Creates list of task information
  ************************************************************************/
 void Todo::input(int argc, const char * argv[])
@@ -249,8 +241,8 @@ void Todo::input(int argc, const char * argv[])
 
 /************************************************************************
  * Function name:   view(Todo task[], int taskListSize)
- * Entry:			Takes pointer to first array element, size of array
- * Exit:			Prints information entered by user
+ * Entry:	    Takes pointer to first array element, size of array
+ * Exit:	    Prints information entered by user
  * Purpose:         Prints values in private variables of class Todo
  ************************************************************************/
 void Todo::view(Todo task[], int taskListSize)
@@ -267,10 +259,10 @@ void Todo::view(Todo task[], int taskListSize)
 
 /************************************************************************
 * Function name:    edit(Todo task[], int taskListSize)
-* Entry:			Takes task array, size of array.
+* Entry:	    Takes task array, size of array.
 * Exit:             Array values may be changed.
 * Purpose:          Allows user to pick which tasks to edit, overwrite
-*					data.
+*		    data.
 ************************************************************************/
 void Todo::edit(Todo task[], int taskListSize)
 {
@@ -358,8 +350,8 @@ void Todo::edit(Todo task[], int taskListSize)
 
 /************************************************************************
  * Function name:   Todo::Todo()
- * Entry:			When object of class Todo is declared
- * Exit:			Sets default values of all member variables
+ * Entry:	    When object of class Todo is declared
+ * Exit:	    Sets default values of all member variables
  * Purpose:         Gives new object pre-determined values
  ************************************************************************/
 Todo::Todo()
@@ -372,8 +364,8 @@ Todo::Todo()
 
 /************************************************************************
  * Function name:   setDescription(string descriptionNew)
- * Entry:			Called by another function or variable
- * Exit:			Returns data stored in string description
+ * Entry:	    Called by another function or variable
+ * Exit:	    Returns data stored in string description
  * Purpose:         Access to private data
  ************************************************************************/
 void Todo::setDescription(string descriptionNew)
@@ -383,8 +375,8 @@ void Todo::setDescription(string descriptionNew)
 
 /************************************************************************
  * Function name:   setPriority(int priorityNew)
- * Entry:			Takes input to be stored in object int priority
- * Exit:			Sets value of priorty
+ * Entry:	    Takes input to be stored in object int priority
+ * Exit:	    Sets value of priorty
  * Purpose:         Access to private data, keeps input within acceptable range
  ************************************************************************/
 void Todo::setPriority(int priorityNew)
@@ -400,8 +392,8 @@ void Todo::setPriority(int priorityNew)
 
 /************************************************************************
  * Function name:   setCategory(string categoryNew)
- * Entry:			Takes input to be stored in object int category
- * Exit:			Sets value of category
+ * Entry:	    Takes input to be stored in object int category
+ * Exit:	    Sets value of category
  * Purpose:         Access to private data, keeps input within acceptable range
  ************************************************************************/
 void Todo::setCategory(string categoryNew)
@@ -450,7 +442,7 @@ int validInt()
 
 /************************************************************************
 * Function name:    newLine() (from Savitch "Absolute C++"
-* Entry:			Checks input stream for leftover data
+* Entry:	    Checks input stream for leftover data
 * Exit:             Clears input stream
 * Purpose:          Discards input on current input line, including '\n'
 ************************************************************************/
@@ -466,8 +458,8 @@ void newLine()
 
 /************************************************************************
  * Function name:   randomQuote()
- * Entry:			Starts before menu appears at end of input functions.
- * Exit:			Returns a quote determined by a random number.
+ * Entry:	    Starts before menu appears at end of input functions.
+ * Exit:	    Returns a quote determined by a random number.
  * Purpose:         To demontrate random numbers, and to add something
                     unexpected to a simple program.
  ************************************************************************/
