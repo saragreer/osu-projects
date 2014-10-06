@@ -1,8 +1,8 @@
 /*****
  * Author:           Sara Greer
  * Date:             July 3, 2014
- * Last modified:    July 6, 2014
- * File name:        mainA1.cpp
+ * Last modified:    October 6, 2014
+ * File name:        main.cpp
  *
  * Overview: This is a C++ simulation of Conway's Game of Life.
  *
@@ -73,8 +73,13 @@ int main()
             }
         }
         
+	//user chooses grid layout
         build(world, choice);
+
+	//user chooses how many cycles to run
         cycle(loop, count);
+
+	//prints first grid layout to console
         print(world);
         
         //print choice, use getline to pause, set next = y to continue
